@@ -63,8 +63,10 @@ const populations = [8175133, 3792621, 2695598, 2100263];
 */
 
 // CODE HERE
-//const totalPopulation //  = populations.reduce(/* Provide Your Callback Here */)
-
+const totalPopulation = populations.reduce(function (firstValue, secondValue){
+  return firstValue + secondValue
+})
+ console.log(totalPopulation)
 
 
 ////////// PROBLEM 4 //////////
@@ -88,9 +90,9 @@ const monstersInYourPocket = [{"monster":"Bulbabunny","CP":156},{"monster":"Bulb
 */
 
 // CODE HERE
-//const myStrongest // = monstersInYourPocket.filter(/* Provide Your Callback Here */)
+const myStrongest = monstersInYourPocket.filter((monstersInYourPocket) => monstersInYourPocket[200] >= 200)
 
-
+ console.log(myStrongest)
 
 ////////// PROBLEM 5 //////////
 
